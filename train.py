@@ -134,7 +134,7 @@ class Model():
                 curr_epoch.assign(e+1)
                 manager.save()
                 print(self.model.name)
-                self.model.save(self.model.name+".h5")
+                self.model.save(self.model.name)
     
     def predict(self, pred_ds, best):
         if best:
