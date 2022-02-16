@@ -133,6 +133,8 @@ class Model():
                 best_acc.assign(self.test_accuracy.result())
                 curr_epoch.assign(e+1)
                 manager.save()
+                print(self.model.name)
+                self.model.save(self.model.name+".h5")
     
     def predict(self, pred_ds, best):
         if best:
